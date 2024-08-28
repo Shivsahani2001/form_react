@@ -1,8 +1,8 @@
-/* Base Styles */
 .App {
-  margin: 1% 5% 5% 5%; /* Reduce top margin */
+  margin: 5%;
   padding: 5% 400px;
   font-size: large;
+  /* text-align: center; */
 }
 
 .form-label {
@@ -10,7 +10,6 @@
   display: inline-block;
   font-weight: bold;
 }
-
 .form-control {
   display: block;
   width: 100%;
@@ -22,6 +21,9 @@
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -34,6 +36,7 @@
   display: block;
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -46,6 +49,8 @@
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -55,55 +60,4 @@
   border-color: #0d6efd;
   padding: 5px 10px;
   border-radius: 5px;
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .App {
-    padding: 5% 200px;
-    font-size: medium;
-  }
-}
-
-@media (max-width: 992px) {
-  .App {
-    padding: 5% 100px;
-    font-size: medium;
-  }
-}
-
-@media (max-width: 768px) {
-  .App {
-    padding: 5%;
-    font-size: medium;
-  }
-
-  .form-control,
-  .form-select {
-    font-size: 0.9rem;
-    padding: 0.35rem 0.65rem;
-  }
-
-  .btn {
-    padding: 4px 8px;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .App {
-    padding: 2%;
-    font-size: small;
-  }
-
-  .form-control,
-  .form-select {
-    font-size: 0.85rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  .btn {
-    padding: 3px 6px;
-    font-size: 0.85rem;
-  }
 }
